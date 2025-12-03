@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .btn{
+    @apply p-3 rounded-3xl bg-blue-300 cursor-pointer border-2 border-white;
+  }
+  .stopwatchBtn{
+    @apply p-3 rounded-2xl bg-black cursor-pointer text-3xl text-white;
+  }
+  .noBtn {
+    @apply min-w-25 min-h-20 p-4 rounded-[100px] bg-gray-400 text-6xl;
+  }
+  .box {
+    @apply p-8 rounded-2xl border-2 border-black flex items-center justify-center ;
+  }
+  .boxText{
+    @apply text-4xl cursor-pointer hover:text-shadow-2xs hover:text-shadow-gray-500 hover:underline;
+  }
+}
